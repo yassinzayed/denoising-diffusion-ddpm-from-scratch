@@ -70,7 +70,7 @@ import torch.nn.functional as F
 
 def noise_prediction_loss(noise_pred, noise):
     # TODO: MSE between predicted and true noise
-    return F.mse_loss(noise, noise_pred)
+    return F.mse_loss(noise_pred, noise)
 
 # Step 8 - diffusion_training_loss (not yet solved)
 # TODO: implement
